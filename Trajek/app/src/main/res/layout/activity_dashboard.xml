@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELAMAT DATANG "
+            android:textSize="50px"
+            android:textColor="#fff"/>
+        <TextView
+            android:id="@+id/viewsuer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="asd"
+            android:textColor="#fff"
+            android:textSize="50px"/>
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+           />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="184dp"
+                android:layout_height="178dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#ED5565"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="137dp"
+                    android:layout_height="63dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:background="#DA4453"
+                    android:padding="8dp"
+                    android:text="Transaksi"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="190dp"
+                android:layout_height="178dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#FC6E51"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="93dp"
+                    android:layout_height="58dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:background="#E9573F"
+                    android:padding="8dp"
+                    android:text="Konfirmasi"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
