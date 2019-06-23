@@ -16,7 +16,8 @@
         android:textColor="@android:color/white"
         android:textSize="@dimen/txt30"
         tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,7 +26,8 @@
         android:orientation="vertical"
         android:paddingBottom="@dimen/space5"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="79dp">
+        tools:layout_editor_absoluteY="79dp"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:layout_width="wrap_content"
@@ -36,7 +38,7 @@
             android:textSize="@dimen/txt10" />
 
         <EditText
-            android:id="@+id/et_username"
+            android:id="@+id/id_transaksi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
@@ -55,7 +57,8 @@
         android:orientation="vertical"
         android:paddingBottom="@dimen/space5"
         tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="131dp">
+        tools:layout_editor_absoluteY="131dp"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:layout_width="wrap_content"
@@ -66,7 +69,7 @@
             android:textSize="@dimen/txt10" />
 
         <EditText
-            android:id="@+id/et_username"
+            android:id="@+id/nik"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
@@ -85,7 +88,8 @@
         android:orientation="vertical"
         android:paddingBottom="@dimen/space5"
         tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="189dp">
+        tools:layout_editor_absoluteY="189dp"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:layout_width="wrap_content"
@@ -96,7 +100,7 @@
             android:textSize="@dimen/txt10" />
 
         <EditText
-            android:id="@+id/et_username"
+            android:id="@+id/nama_barang"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
@@ -115,7 +119,39 @@
         android:orientation="vertical"
         android:paddingBottom="@dimen/space5"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="244dp">
+        tools:layout_editor_absoluteY="244dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space5"
+            android:text="  Nomor Polisi"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt10" />
+
+        <EditText
+            android:id="@+id/tanggal_pesan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint=" Nomor Polisi"
+            android:lines="1"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textColorHint="#33FFFFFF"
+            android:textSize="@dimen/txt16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_ediitext"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/space5"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="297dp"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:layout_width="wrap_content"
@@ -126,7 +162,7 @@
             android:textSize="@dimen/txt10" />
 
         <EditText
-            android:id="@+id/et_username"
+            android:id="@+id/tanggal_pengambilan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
@@ -144,49 +180,20 @@
         android:background="@drawable/bg_ediitext"
         android:orientation="vertical"
         android:paddingBottom="@dimen/space5"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="297dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/space5"
-            android:text="  Tanggal Pengambilan"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/txt10" />
-
-        <EditText
-            android:id="@+id/et_username"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            android:hint=" Tanggal Pengambilan"
-            android:lines="1"
-            android:text=""
-            android:textColor="@android:color/white"
-            android:textColorHint="#33FFFFFF"
-            android:textSize="@dimen/txt16" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_ediitext"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/space5"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="352dp">
+        tools:layout_editor_absoluteY="352dp"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/space5"
-            android:text="  Tanggal Pengembalian"
+            android:text="  Harga"
             android:textColor="@android:color/white"
             android:textSize="@dimen/txt10" />
 
         <EditText
-            android:id="@+id/et_username"
+            android:id="@+id/tanggal_pengembalian"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
@@ -205,7 +212,8 @@
         android:orientation="vertical"
         android:paddingBottom="@dimen/space5"
         tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="407dp">
+        tools:layout_editor_absoluteY="407dp"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:layout_width="wrap_content"
@@ -216,11 +224,11 @@
             android:textSize="@dimen/txt10" />
 
         <EditText
-            android:id="@+id/et_username"
+            android:id="@+id/tipe_pembayaran"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
-            android:hint=" Type Pembayaran"
+            android:hint=" Bayar"
             android:lines="1"
             android:text=""
             android:textColor="@android:color/white"
@@ -229,7 +237,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btn_sign_up"
+        android:id="@+id/btnkonfirmasi"
         android:layout_width="159dp"
         android:layout_height="@dimen/btn_height"
         android:background="@drawable/btn_white_selector"
@@ -238,10 +246,11 @@
         android:textColor="@color/colorPrimary"
         android:textSize="@dimen/txt16"
         tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="487dp" />
+        tools:layout_editor_absoluteY="487dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/btn_sign_up"
+        android:id="@+id/btntolak"
         android:layout_width="159dp"
         android:layout_height="@dimen/btn_height"
         android:background="@drawable/btn_white_selector"
@@ -250,5 +259,6 @@
         android:textColor="@color/colorPrimary"
         android:textSize="@dimen/txt16"
         tools:layout_editor_absoluteX="209dp"
-        tools:layout_editor_absoluteY="487dp" />
+        tools:layout_editor_absoluteY="487dp"
+        tools:ignore="MissingConstraints" />
 </android.support.constraint.ConstraintLayout>

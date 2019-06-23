@@ -16,7 +16,8 @@
         android:textColor="@android:color/white"
         android:textSize="@dimen/txt30"
         tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
 
     <LinearLayout
         android:layout_width="342dp"
@@ -25,7 +26,8 @@
         android:orientation="vertical"
         android:paddingBottom="@dimen/space5"
         tools:layout_editor_absoluteX="21dp"
-        tools:layout_editor_absoluteY="100dp">
+        tools:layout_editor_absoluteY="100dp"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:layout_width="wrap_content"
@@ -60,4 +62,5 @@
         android:textColor="@color/colorPrimary"
         android:textSize="@dimen/txt16"
         tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="182dp" /></android.support.constraint.ConstraintLayout>
+        tools:layout_editor_absoluteY="182dp"
+        tools:ignore="MissingConstraints" /></android.support.constraint.ConstraintLayout>
