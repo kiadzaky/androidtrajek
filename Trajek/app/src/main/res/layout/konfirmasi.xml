@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_sign_up"
+        android:layout_width="179dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/iv_back"
+        android:layout_gravity="center_horizontal"
+        android:text="Konfirmasi"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/txt30"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <LinearLayout
+        android:layout_width="342dp"
+        android:layout_height="44dp"
+        android:background="@drawable/bg_ediitext"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/space5"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="100dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space5"
+            android:text="Kode Transaksi"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt10" />
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="Kode Transaksi"
+            android:lines="1"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textColorHint="#33FFFFFF"
+            android:textSize="@dimen/txt16" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_sign_up"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/btn_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_white_selector"
+        android:text="Enter"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/txt16"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="182dp" /></android.support.constraint.ConstraintLayout>
