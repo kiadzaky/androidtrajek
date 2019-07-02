@@ -19,6 +19,13 @@
         tools:layout_editor_absoluteY="16dp"
         tools:ignore="MissingConstraints" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,7 +35,6 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="79dp"
         tools:ignore="MissingConstraints">
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -236,6 +242,11 @@
             android:textSize="@dimen/txt16" />
     </LinearLayout>
 
+</RelativeLayout>
+
+    </ScrollView>
+
+
     <Button
         android:id="@+id/btnkonfirmasi"
         android:layout_width="159dp"
@@ -261,4 +272,5 @@
         tools:layout_editor_absoluteX="209dp"
         tools:layout_editor_absoluteY="487dp"
         tools:ignore="MissingConstraints" />
+
 </android.support.constraint.ConstraintLayout>
