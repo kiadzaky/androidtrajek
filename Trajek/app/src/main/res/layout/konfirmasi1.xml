@@ -1,276 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tv_sign_up"
-        android:layout_width="161dp"
-        android:layout_height="56dp"
-        android:layout_below="@id/iv_back"
-        android:layout_gravity="center_horizontal"
-        android:text="Transaksi"
-        android:textColor="@android:color/white"
-        android:textSize="@dimen/txt30"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="16dp"
-        tools:ignore="MissingConstraints" />
-
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scrollbars="none"
+        android:layout_alignParentLeft="true">
+
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:alpha="0.5"
+            android:background="#000">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_ediitext"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/space5"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="79dp"
-        tools:ignore="MissingConstraints">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/space5"
-            android:text="  ID Transaksi"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/txt10" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp">
 
-        <EditText
-            android:id="@+id/id_transaksi"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            android:hint=" ID Transaksi"
-            android:lines="1"
-            android:text=""
-            android:textColor="@android:color/white"
-            android:textColorHint="#33FFFFFF"
-            android:textSize="@dimen/txt16" />
-    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_ediitext"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/space5"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="131dp"
-        tools:ignore="MissingConstraints">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="72dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        android:text="Transaksi"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/txt30"
+                        android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/space5"
-            android:text="  NIK"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/txt10" />
+                    <EditText
+                        android:id="@+id/et_idtransaksi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/roundwhite"
+                        android:hint="ID Transaksi"
+                        android:maxLength="16"
+                        android:padding="15dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
 
-        <EditText
-            android:id="@+id/nik"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            android:hint=" NIK"
-            android:lines="1"
-            android:text=""
-            android:textColor="@android:color/white"
-            android:textColorHint="#33FFFFFF"
-            android:textSize="@dimen/txt16" />
-    </LinearLayout>
+                    <EditText
+                        android:id="@+id/et_nik"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/roundwhite"
+                        android:hint="NIK"
+                        android:inputType="number"
+                        android:maxLength="16"
+                        android:padding="15dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_ediitext"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/space5"
-        tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="189dp"
-        tools:ignore="MissingConstraints">
+                    <EditText
+                        android:id="@+id/et_nama_barang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/roundwhite"
+                        android:hint="Nama Barang"
+                        android:padding="15dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/space5"
-            android:text="  Nama Barang"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/txt10" />
+                    <EditText
+                        android:id="@+id/et_no_polisi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/roundwhite"
+                        android:hint="No Polisi"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:padding="15dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
 
-        <EditText
-            android:id="@+id/nama_barang"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            android:hint=" Nama Barang"
-            android:lines="1"
-            android:text=""
-            android:textColor="@android:color/white"
-            android:textColorHint="#33FFFFFF"
-            android:textSize="@dimen/txt16" />
-    </LinearLayout>
+                    <EditText
+                        android:id="@+id/et_tanggal_pesan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/roundwhite"
+                        android:hint="Tanggal Pesan"
+                        android:padding="15dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_ediitext"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/space5"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="244dp"
-        tools:ignore="MissingConstraints">
+                    <EditText
+                        android:id="@+id/et_tanggal_pengembalian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/roundwhite"
+                        android:hint="Tanggal Pengembalian"
+                        android:padding="15dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/space5"
-            android:text="  Nomor Polisi"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/txt10" />
+                    <EditText
+                        android:id="@+id/et_harga"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/roundwhite"
+                        android:hint="Harga"
+                        android:inputType="textPassword"
+                        android:padding="15dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
 
-        <EditText
-            android:id="@+id/tanggal_pesan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            android:hint=" Nomor Polisi"
-            android:lines="1"
-            android:text=""
-            android:textColor="@android:color/white"
-            android:textColorHint="#33FFFFFF"
-            android:textSize="@dimen/txt16" />
-    </LinearLayout>
+                    <EditText
+                        android:id="@+id/et_type_pembayaran"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/roundwhite"
+                        android:hint="Type Pembayaran"
+                        android:inputType="textPassword"
+                        android:padding="15dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_ediitext"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/space5"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="297dp"
-        tools:ignore="MissingConstraints">
+                    <EditText
+                        android:id="@+id/et_bayar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/roundwhite"
+                        android:hint="Bayar"
+                        android:inputType="textPassword"
+                        android:padding="15dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/space5"
-            android:text="  Tanggal Pesan"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/txt10" />
+                    <Button
+                        android:id="@+id/btn_konfirmasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/btn_white_selector"
+                        android:text="Konfirmasi"
+                        android:textColor="@color/colorPrimary" />
 
-        <EditText
-            android:id="@+id/tanggal_pengambilan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            android:hint=" Tanggal Pesan"
-            android:lines="1"
-            android:text=""
-            android:textColor="@android:color/white"
-            android:textColorHint="#33FFFFFF"
-            android:textSize="@dimen/txt16" />
-    </LinearLayout>
+                    <Button
+                        android:id="@+id/btn_tolak"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_white_selector"
+                        android:text="Tolak"
+                        android:textColor="@color/colorPrimary" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_ediitext"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/space5"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="352dp"
-        tools:ignore="MissingConstraints">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/space5"
-            android:text="  Harga"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/txt10" />
-
-        <EditText
-            android:id="@+id/tanggal_pengembalian"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            android:hint=" Tanggal Pengembalian"
-            android:lines="1"
-            android:text=""
-            android:textColor="@android:color/white"
-            android:textColorHint="#33FFFFFF"
-            android:textSize="@dimen/txt16" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_ediitext"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/space5"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="407dp"
-        tools:ignore="MissingConstraints">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/space5"
-            android:text="  Type Pembayaran"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/txt10" />
-
-        <EditText
-            android:id="@+id/tipe_pembayaran"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            android:hint=" Bayar"
-            android:lines="1"
-            android:text=""
-            android:textColor="@android:color/white"
-            android:textColorHint="#33FFFFFF"
-            android:textSize="@dimen/txt16" />
-    </LinearLayout>
-
-</RelativeLayout>
-
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
     </ScrollView>
 
 
-    <Button
-        android:id="@+id/btnkonfirmasi"
-        android:layout_width="159dp"
-        android:layout_height="@dimen/btn_height"
-        android:background="@drawable/btn_white_selector"
-        android:text="Konfirmasi"
-        android:textAllCaps="false"
-        android:textColor="@color/colorPrimary"
-        android:textSize="@dimen/txt16"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="487dp"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/btntolak"
-        android:layout_width="159dp"
-        android:layout_height="@dimen/btn_height"
-        android:background="@drawable/btn_white_selector"
-        android:text="Tolak"
-        android:textAllCaps="false"
-        android:textColor="@color/colorPrimary"
-        android:textSize="@dimen/txt16"
-        tools:layout_editor_absoluteX="209dp"
-        tools:layout_editor_absoluteY="487dp"
-        tools:ignore="MissingConstraints" />
-
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
